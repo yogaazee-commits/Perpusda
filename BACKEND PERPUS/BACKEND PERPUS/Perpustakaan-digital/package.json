@@ -1,0 +1,39 @@
+{
+  "name": "diskominfo-karanganyar",
+  "version": "1.0.0",
+  "description": "Website Perpus Digital",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "test": "tsx test-api.ts",
+    "test:roles": "tsx test-roles.ts",
+    "test:status": "tsx test-buku-status.ts",
+    "test:crud": "tsx test-crud.ts",
+    "test:log": "tsx test-log-pembaca.ts",
+    "postinstall": "prisma generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/minio": "^7.1.0",
+    "@types/multer": "^2.3.0",
+    "@types/node": "^22.13.10",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@google/genai": "^2.25.0",
+    "@prisma/client": "^6.19.3",
+    "bcryptjs": "^3.0.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "minio": "^8.0.7",
+    "multer": "^2.4.0",
+    "prisma": "^6.19.3"
+  }
+}
